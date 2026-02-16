@@ -173,7 +173,7 @@ header .container {
 
 .nav-links a {
     font-weight: 500;
-    color: var(--text-secondary);
+    color: black;
 }
 
 .nav-links a:hover {
