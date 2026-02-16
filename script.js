@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         hamburger.classList.toggle('active');
-        
+
         // Simple fade in effect
-        if(navLinks.style.display === 'flex') {
+        if (navLinks.style.display === 'flex') {
             navLinks.style.flexDirection = 'column';
             navLinks.style.position = 'absolute';
             navLinks.style.top = '80px';
             navLinks.style.right = '0';
             navLinks.style.width = '100%';
-            navLinks.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
+            navLinks.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
             navLinks.style.padding = '20px';
             navLinks.style.borderBottom = '1px solid var(--border)';
         }
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 const headerOffset = 80;
