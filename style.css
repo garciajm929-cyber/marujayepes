@@ -245,7 +245,7 @@ header .container {
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-secondary);
+    color: black;
     margin-bottom: 2.5rem;
     max-width: 500px;
 }
