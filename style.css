@@ -74,24 +74,22 @@ ul {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    text-align: center;
     position: relative;
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
 }
 
 .section-title::after {
     content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 60px;
     height: 4px;
     background-color: var(--accent);
     border-radius: 2px;
+    margin-top: 10px;
 }
 
 .btn {
@@ -493,12 +491,7 @@ header .container {
     text-align: center;
 }
 
-#contact .section-title {
-    text-align: center !important;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* #contact .section-title centering handled by global class */
 
 .contact-subtitle {
     max-width: 600px;
