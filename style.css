@@ -319,7 +319,7 @@ header .container {
 
 .about-text p {
     margin-bottom: 20px;
-    color: var(--text-secondary);
+    color: black;
 }
 
 .image-wrapper {
