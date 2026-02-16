@@ -441,7 +441,7 @@ header .container {
 }
 
 .project-info p {
-    color: var(--text-secondary);
+    color: black;
     font-size: 0.95rem;
     margin-bottom: 20px;
 }
