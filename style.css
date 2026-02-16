@@ -312,10 +312,12 @@ header .container {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     align-items: center;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text p {
