@@ -493,6 +493,13 @@ header .container {
     text-align: center;
 }
 
+#contact .section-title {
+    text-align: center !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact-subtitle {
     max-width: 600px;
     margin: 0 auto 3rem auto;
