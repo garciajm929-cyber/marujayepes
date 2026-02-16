@@ -320,6 +320,7 @@ header .container {
 .about-text p {
     margin-bottom: 20px;
     color: black;
+    text-align: center;
 }
 
 .image-wrapper {
