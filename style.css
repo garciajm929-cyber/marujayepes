@@ -40,9 +40,9 @@ body {
     font-family: var(--font-main);
     background-color: var(--bg-primary);
     background-image:
-        linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)),
-        linear-gradient(to right, #1e293b 1px, transparent 1px),
-        linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+        linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
     background-size: 100% 100%, 50px 50px, 50px 50px;
     color: var(--text-primary);
     line-height: 1.6;
@@ -96,7 +96,7 @@ ul {
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    border-radius: 50px;
+    border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
     border: none;
@@ -144,7 +144,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid var(--border);
@@ -205,103 +205,49 @@ header .container {
 ========================================
 */
 #hero {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     padding-top: 80px;
-    background-color: var(--bg-primary);
-    /* Ensure dark bg */
-    overflow: hidden;
-    /* For the image bleed */
+    /* Offset for fixed header */
 }
 
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-}
-
-.hero-text {
-    z-index: 2;
-    padding-right: 2rem;
+.hero-content {
+    max-width: 800px;
+    z-index: 1;
 }
 
 .hero-title {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    color: var(--accent);
+    font-size: 2rem;
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .hero-description {
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 2.5rem;
-    max-width: 500px;
-}
-
-.hero-buttons {
-    margin-bottom: 2rem;
-}
-
-.hero-visual {
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.hero-img {
-    width: 100%;
     max-width: 600px;
-    height: auto;
-    object-fit: cover;
-    /* Create the blending effect */
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
-    mask-image: linear-gradient(to right, transparent 0%, black 30%);
-    /* Optional: Add a subtle glow or filter to match the vibe */
-    filter: contrast(1.1);
 }
 
-.hero-socials {
-    display: flex;
-    gap: 20px;
-}
-
-.hero-socials a {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--border);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    transition: var(--transition);
-}
-
-.hero-socials a:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background-color: rgba(255, 134, 116, 0.1);
-}
-
-/* Remove old deco element styles or keep them subtle */
 .hero-bg-accent {
-    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* 
