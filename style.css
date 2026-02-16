@@ -492,7 +492,7 @@ header .container {
 .contact-subtitle {
     max-width: 600px;
     margin: 0 auto 3rem auto;
-    color: var(--text-secondary);
+    color: black;
     font-size: 1.1rem;
 }
 
