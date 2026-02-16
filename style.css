@@ -4,16 +4,16 @@
 ========================================
 */
 :root {
-    /* Color Palette - Pure Black Theme */
-    --bg-primary: #000000;
-    --bg-secondary: #0a0a0a;
-    --text-primary: #ffffff;
-    --text-secondary: #a3a3a3;
+    /* Color Palette - Premium Light Theme */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
     --accent: #FF8674;
     /* Salmon */
     --accent-hover: #FF6B58;
     /* Darker Salmon */
-    --border: #262626;
+    --border: #e2e8f0;
 
     /* Spacing */
     --container-width: 1100px;
@@ -40,9 +40,9 @@ body {
     font-family: var(--font-main);
     background-color: var(--bg-primary);
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
-        linear-gradient(to right, #262626 1px, transparent 1px),
-        linear-gradient(to bottom, #262626 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+        linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+        linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
     background-size: 100% 100%, 40px 40px, 40px 40px;
     color: var(--text-primary);
     line-height: 1.6;
@@ -144,7 +144,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid var(--border);
