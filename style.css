@@ -9,8 +9,10 @@
     --bg-secondary: #1e293b;
     --text-primary: #f1f5f9;
     --text-secondary: #94a3b8;
-    --accent: #38bdf8;
-    --accent-hover: #0ea5e9;
+    --accent: #FF8674;
+    /* Salmon */
+    --accent-hover: #FF6B58;
+    /* Darker Salmon */
     --border: #334155;
 
     /* Spacing */
