@@ -4,16 +4,18 @@
 ========================================
 */
 :root {
-    /* Color Palette - Premium Light Theme */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
+    /* Color Palette - Soft Beige & Pastel Olive Theme */
+    --bg-primary: #FFF0D9;
+    /* Soft Beige */
+    --bg-secondary: #F5E6CE;
+    /* Slightly darker beige */
     --text-primary: #0f172a;
     --text-secondary: #64748b;
     --accent: #B0A57D;
     /* Pastel Olive */
     --accent-hover: #9A8F6B;
     /* Darker Pastel Olive */
-    --border: #e2e8f0;
+    --border: #E5D5BB;
 
     /* Spacing */
     --container-width: 1100px;
