@@ -52,4 +52,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // Project Carousel Logic
+    const projectCards = document.querySelectorAll('.project-card');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentProjectIndex = 0;
+
+    function showProject(index) {
+        // Hide all projects
+        projectCards.forEach(card => {
+            card.classList.remove('active');
+            card.style.display = 'none'; // Ensure display is none for non-active
+        });
+
+        // Show current project
+        projectCards[index].classList.add('active');
+        projectCards[index].style.display = 'block'; // Ensure display is block for active
+    }
+
+    if (prevBtn && nextBtn && projectCards.length > 0) {
+        // Initialize first project
+        showProject(currentProjectIndex);
+
+        prevBtn.addEventListener('click', () => {
+            currentProjectIndex--;
+            if (currentProjectIndex < 0) {
+                currentProjectIndex = projectCards.length - 1;
+            }
+            showProject(currentProjectIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentProjectIndex++;
+            if (currentProjectIndex >= projectCards.length) {
+                currentProjectIndex = 0;
+            }
+            showProject(currentProjectIndex);
+        });
+    }
 });
