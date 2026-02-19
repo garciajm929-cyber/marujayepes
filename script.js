@@ -90,4 +90,29 @@ document.addEventListener('DOMContentLoaded', () => {
             showProject(currentProjectIndex);
         });
     }
+    // Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close-lightbox');
+    const projectImages = document.querySelectorAll('.project-image img'); // Only images, not videos
+
+    projectImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    }
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
 });
