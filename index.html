@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=carousel">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -118,65 +118,76 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="projects-carousel-container">
-            <button class="carousel-btn prev-btn" aria-label="Previous Project"><i
-                    class="fas fa-chevron-left"></i></button>
-            <div class="projects-grid">
-                <!-- Projects will be added here -->
-                <article class="project-card active">
-                    <div class="project-image">
-                        <img src="digital-design.jpg" alt="Digital Design"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-info">
-                        <h3>Digital Design</h3>
-                        <p>Creative digital design projects showcasing visual storytelling.</p>
-                        <div class="project-tags">
-                            <span>Graphic Design</span>
-                            <span>Storytelling</span>
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous Project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="projects-grid">
+                    <!-- Digital Design -->
+                    <article class="project-card active">
+                        <div class="project-image">
+                            <img src="digital-design.jpg" alt="Digital Design"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <h3>Digital Design</h3>
+                            <p>Creative digital design projects showcasing visual storytelling.</p>
+                            <div class="project-tags">
+                                <span>Graphic Design</span>
+                                <span>Storytelling</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Advertisement Project -->
-                <article class="project-card">
-                    <div class="project-image" style="background: black;">
-                        <video controls style="width: 100%; height: 100%; object-fit: cover;">
-                            <source src="pineapple.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="project-info">
-                        <strong>Advertisement</strong>
-                        <p style="margin-top: 5px;">A creative video showcasing dynamic editing and strong brand
-                            identity.</p>
-                        <div class="project-tags">
-                            <span>Video Editing</span>
-                            <span>Brand</span>
+                    <!-- Advertisement Project -->
+                    <article class="project-card">
+                        <div class="project-image" style="background: black;">
+                            <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                                <source src="pineapple.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <strong>Advertisement</strong>
+                            <p style="margin-top: 5px;">A creative video showcasing dynamic editing and strong brand
+                                identity.</p>
+                            <div class="project-tags">
+                                <span>Video Editing</span>
+                                <span>Brand</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Promotional Poster Project -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="12.png" alt="Promotional Poster"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-info">
-                        <h3>Promotional Poster</h3>
-                        <p>A visually striking promotional poster designed to capture attention and communicate brand
-                            messaging effectively.</p>
-                        <div class="project-tags">
-                            <span>Graphic Design</span>
-                            <span>Branding</span>
+                    <!-- Promotional Poster Project -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="12.png" alt="Promotional Poster"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <h3>Promotional Poster</h3>
+                            <p>A visually striking promotional poster designed to capture attention and communicate
+                                brand
+                                messaging effectively.</p>
+                            <div class="project-tags">
+                                <span>Graphic Design</span>
+                                <span>Branding</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next Project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
             </div>
-            <button class="carousel-btn next-btn" aria-label="Next Project"><i
-                    class="fas fa-chevron-right"></i></button>
-        </div>
         </div>
     </section>
 
@@ -206,7 +217,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=carousel"></script>
 </body>
 
 </html>
